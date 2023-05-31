@@ -9,5 +9,9 @@ $ ```commande à taper```
 ### Commandes pour configurer le firewall (optionnel -> Romain verra)
 $ ```commande à taper```
 
+<!--### ajout de gateway pour vlan
+Se brancher aux ports correspondants (ici pour le VLAN 20)
+  ip default gateway 192.168.20.254-->
+
 Légende :
 $ pour les commandes
