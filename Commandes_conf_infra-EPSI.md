@@ -57,18 +57,18 @@
   end
   
 ### Configuration des règles de routage des VLANs sur le routeur ?
-  Router_A(config)#interface fastethernet 0/0
-  Router_A(config-if)#no shutdown
-  Router_A(config-if)#interface fastethernet 0/0.2
-  Router_A(config-subif)#encapsulation dot1q 1
-  Router_A(config-subif)#ip address 192.168.1.1 255.255.255.0
-  Router_A(config-if)#interface fastethernet 0/0.3
-  Router_A(config-subif)#encapsulation dot1q 10
-  Router_A(config-subif)#ip address 192.168.5.1 255.255.255.0 
-  Router_A(config-if)#interface fastethernet 0/0.4 
-  Router_A(config-subif)#encapsulation dot1q 20 
-  Router_A(config-subif)#ip address 192.168.7.1 255.255.255.0 
-  Router_A(config-subif)#end
+  interface fastethernet 0/0
+  no shutdown
+  interface fastethernet 0/0.2
+  encapsulation dot1q 1
+  ip address 192.168.1.1 255.255.255.0
+  interface fastethernet 0/0.3
+  encapsulation dot1q 10
+  ip address 192.168.5.1 255.255.255.0 
+  interface fastethernet 0/0.4 
+  encapsulation dot1q 20 
+  ip address 192.168.7.1 255.255.255.0 
+  end
 
 <!--### ajout de gateway pour vlan
 Se brancher aux ports correspondants (ici pour le VLAN 20)
