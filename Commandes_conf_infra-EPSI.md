@@ -3,9 +3,9 @@
 ## Commandes de configuration des switches
 
 ### Commandes pour configurer les switches (nom des switches)
-  conf t
-  vlan 20
-  name server
+  conf t   
+  vlan 20   
+  name server   
   end
 
 ### Commandes pour configurer les ports des switchs + ajout de sports au vlan
